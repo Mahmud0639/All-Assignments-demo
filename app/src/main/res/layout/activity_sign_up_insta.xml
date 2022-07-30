@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpInsta">
+
+    <TextView
+        android:id="@+id/instagram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20mdp"
+        android:fontFamily="@font/galada"
+        android:text="Instagram"
+        android:textSize="@dimen/_30font_mdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/signupInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Sign up to see photos and videos from your friends"
+        android:textSize="@dimen/_18font_mdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/instagram"
+        app:layout_constraintStart_toStartOf="@id/instagram"
+        app:layout_constraintTop_toBottomOf="@id/instagram" />
+
+    <Button
+        android:id="@+id/btnId"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45mdp"
+        android:layout_marginStart="@dimen/_10mdp"
+        android:layout_marginTop="@dimen/_14mdp"
+        android:layout_marginEnd="@dimen/_10mdp"
+        android:backgroundTint="#2196F3"
+        android:drawableLeft="@drawable/fb"
+        android:gravity="left|center"
+        android:paddingLeft="@dimen/_50mdp"
+        android:text="Log in with facebook"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_14font_mdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signupInfo" />
+
+    <TextView
+        android:id="@+id/orId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        app:layout_constraintTop_toBottomOf="@id/btnId"
+        app:layout_constraintStart_toStartOf="@id/btnId"
+        app:layout_constraintEnd_toEndOf="@id/btnId"
+        android:layout_marginTop="@dimen/_15mdp"
+        android:textStyle="bold"
+        android:textSize="@dimen/_13font_mdp"/>
+    <View
+        android:id="@+id/view1"
+        android:layout_width="@dimen/_130mdp"
+        android:layout_height="1dp"
+        android:background="#BCBCBC"
+        app:layout_constraintTop_toTopOf="@id/orId"
+        app:layout_constraintBottom_toBottomOf="@id/orId"
+        app:layout_constraintStart_toStartOf="@id/btnId"/>
+    <View
+        android:id="@+id/view2"
+        android:layout_width="@dimen/_130mdp"
+        android:layout_height="1dp"
+        android:background="#BCBCBC"
+        app:layout_constraintTop_toTopOf="@id/orId"
+        app:layout_constraintBottom_toBottomOf="@id/orId"
+        app:layout_constraintEnd_toEndOf="@id/btnId"/>
+    <EditText
+        android:id="@+id/editTX1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/orId"
+        app:layout_constraintStart_toStartOf="@id/view1"
+        app:layout_constraintEnd_toEndOf="@id/view2"
+        android:layout_marginTop="@dimen/_10mdp"
+        android:background="@drawable/edit_bg"
+        android:hint="Mobile Number or Email"
+        android:padding="@dimen/_10mdp"/>
+ <EditText
+        android:id="@+id/editTX2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/editTX1"
+        app:layout_constraintStart_toStartOf="@id/editTX1"
+        app:layout_constraintEnd_toEndOf="@id/editTX1"
+        android:layout_marginTop="@dimen/_12mdp"
+        android:background="@drawable/edit_bg"
+        android:hint="Full Name"
+        android:padding="@dimen/_10mdp"/>
+ <EditText
+        android:id="@+id/editTX3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/editTX2"
+        app:layout_constraintStart_toStartOf="@id/editTX2"
+        app:layout_constraintEnd_toEndOf="@id/editTX2"
+        android:layout_marginTop="@dimen/_12mdp"
+        android:background="@drawable/edit_bg"
+        android:hint="Username"
+        android:padding="@dimen/_10mdp"/>
+ <EditText
+        android:id="@+id/editTX4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/editTX3"
+        app:layout_constraintStart_toStartOf="@id/editTX3"
+        app:layout_constraintEnd_toEndOf="@id/editTX3"
+        android:layout_marginTop="@dimen/_12mdp"
+        android:background="@drawable/edit_bg"
+        android:hint="Password"
+        android:padding="@dimen/_10mdp"/>
+    <Button
+        android:id="@+id/signupBtn"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_45mdp"
+        app:layout_constraintTop_toBottomOf="@id/editTX4"
+        app:layout_constraintStart_toStartOf="@id/editTX4"
+        app:layout_constraintEnd_toEndOf="@id/editTX4"
+        android:text="Sign up"
+        android:backgroundTint="#2C2196F3"
+        android:textAllCaps="false"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/by_signing_up_you_agree_to_our_terms_data_policy_and_cookies_policy"
+        app:layout_constraintTop_toBottomOf="@id/signupBtn"
+        app:layout_constraintStart_toStartOf="@id/signupBtn"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_4mdp"
+        app:layout_constraintEnd_toEndOf="@id/signupBtn"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

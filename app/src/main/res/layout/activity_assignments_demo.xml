@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AssignmentsDemo">
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="@dimen/_250mdp"
+        android:layout_height="@dimen/_15mdp"
+        android:layout_marginTop="@dimen/_15mdp"
+        android:max="10"
+        android:maxHeight="@dimen/_10mdp"
+        android:minHeight="@dimen/_10mdp"
+        android:progressDrawable="@drawable/seekbar_drawable"
+        android:splitTrack="false"
+        android:thumb="@drawable/seekbar_thumb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_14font_mdp"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/_5mdp"
+        app:layout_constraintEnd_toEndOf="@id/seekBar"
+        app:layout_constraintStart_toStartOf="@id/seekBar"
+        app:layout_constraintTop_toBottomOf="@id/seekBar" />
+
+    <TextView
+        android:id="@+id/languageTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10mdp"
+        android:text="Select Language"
+        android:textSize="@dimen/_16font_mdp"
+        app:layout_constraintStart_toStartOf="@id/seekBar"
+        app:layout_constraintTop_toBottomOf="@id/textView" />
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="@dimen/_100mdp"
+        android:layout_height="wrap_content"
+        android:text="C"
+        android:drawablePadding="@dimen/_4mdp"
+        android:drawableLeft="@drawable/checkboxdrawone"
+        android:button="@null"
+        app:layout_constraintStart_toStartOf="@id/languageTxt"
+        app:layout_constraintTop_toBottomOf="@id/languageTxt" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="C++"
+        android:drawablePadding="@dimen/_4mdp"
+        android:drawableLeft="@drawable/check_drawable_two"
+        android:button="@null"
+        android:textSize="@dimen/_14font_mdp"
+        app:layout_constraintStart_toStartOf="@id/checkBox1"
+        app:layout_constraintEnd_toEndOf="@id/checkBox1"
+        app:layout_constraintTop_toBottomOf="@id/checkBox1" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/_4mdp"
+        android:drawableLeft="@drawable/check_drawable_three"
+        android:button="@null"
+        android:text="Java"
+        android:textSize="@dimen/_14font_mdp"
+        app:layout_constraintStart_toStartOf="@id/checkBox2"
+        app:layout_constraintEnd_toEndOf="@id/checkBox2"
+        app:layout_constraintTop_toBottomOf="@id/checkBox2" />
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/_4mdp"
+        android:drawableLeft="@drawable/check_drawable_four"
+        android:button="@null"
+        android:text="Python"
+        android:textSize="@dimen/_14font_mdp"
+        app:layout_constraintStart_toStartOf="@id/checkBox3"
+        app:layout_constraintEnd_toEndOf="@id/checkBox3"
+        app:layout_constraintTop_toBottomOf="@id/checkBox3" />
+
+    <ToggleButton
+        android:id="@+id/btnLang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10mdp"
+        android:text="Show"
+        android:textAllCaps="false"
+        android:textOff="Show"
+        android:textOn="Showed"
+        android:textColor="@color/black"
+        android:background="@drawable/btn_drawable"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checkBox4" />
+
+    <TextView
+        android:id="@+id/showlangText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_13mdp"
+        app:layout_constraintStart_toStartOf="@id/checkBox4"
+        android:textSize="@dimen/_14font_mdp"
+        app:layout_constraintTop_toBottomOf="@id/btnLang"/>
+    <Spinner
+        android:id="@+id/mySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/showlangText"
+        android:layout_marginEnd="@dimen/_30mdp"
+        android:layout_marginStart="@dimen/_30mdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_20mdp"/>
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="@dimen/_100mdp"
+        android:layout_height="@dimen/_45mdp"
+        android:backgroundTint="#FF5722"
+        app:layout_constraintTop_toBottomOf="@id/mySpinner"
+        android:layout_marginTop="@dimen/_12mdp"
+        android:textSize="@dimen/_16font_mdp"
+        app:layout_constraintStart_toStartOf="@id/mySpinner"
+        app:layout_constraintEnd_toEndOf="@id/mySpinner"
+        android:text="Submit"/>
+    <TextView
+        android:id="@+id/subjectTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_16font_mdp"
+        app:layout_constraintTop_toBottomOf="@id/submitBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="#E91E63"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_20mdp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

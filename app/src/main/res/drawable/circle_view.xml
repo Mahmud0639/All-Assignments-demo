@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="oval" xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient android:startColor="@color/start_color_instagram"
+        android:centerColor="@color/middle_color_instagram"
+        android:endColor="@color/end_color_instagram"
+        android:angle="90"/>
+</shape>

@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E1DFDF"
+    tools:context=".LoginPageDesign">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_170mdp"
+        android:background="@drawable/gradient_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.34"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profilePic"
+            android:layout_width="@dimen/_65mdp"
+            android:layout_height="@dimen/_65mdp"
+            android:src="@drawable/cute_girl"
+            app:layout_constraintBottom_toBottomOf="@id/constraint1"
+            app:layout_constraintEnd_toEndOf="@id/constraint1"
+            app:layout_constraintStart_toStartOf="@id/constraint1"
+            app:layout_constraintTop_toTopOf="@id/constraint1"
+            app:layout_constraintVertical_bias="0.24000001" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/oval_white"
+            android:padding="@dimen/_7mdp"
+            android:src="@drawable/mansmall"
+            app:layout_constraintBottom_toTopOf="@id/profilePic"
+            app:layout_constraintEnd_toEndOf="@id/profilePic"
+            app:layout_constraintHorizontal_bias="0.95"
+            app:layout_constraintStart_toStartOf="@id/profilePic"
+            app:layout_constraintTop_toTopOf="@id/profilePic"
+            app:layout_constraintVertical_bias="0.110000014" />
+
+        <TextView
+            android:id="@+id/nameTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10mdp"
+            android:fontFamily="@font/roboto"
+            android:text="Mahmudul Islam"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12font_mdp"
+            app:layout_constraintEnd_toEndOf="@id/profilePic"
+            app:layout_constraintStart_toStartOf="@id/profilePic"
+            app:layout_constraintTop_toBottomOf="@id/profilePic" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_outlineborder"
+            app:layout_constraintTop_toTopOf="@id/nameTxt"
+            app:layout_constraintBottom_toBottomOf="@id/nameTxt"
+            app:layout_constraintStart_toEndOf="@id/nameTxt"
+            android:layout_marginStart="@dimen/_10mdp"
+            android:background="@drawable/oval_white"
+            android:padding="@dimen/_4mdp"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardViewId"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_370mdp"
+                android:layout_marginTop="@dimen/_130mdp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="@dimen/_12mdp"
+                android:layout_marginEnd="@dimen/_12mdp"
+                tools:layout_editor_absoluteX="16dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cons"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/userProfile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_20mdp"
+                        android:text="USER PROFILE"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10font_mdp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="@id/cons"
+                        app:layout_constraintStart_toStartOf="@id/cons"
+                        app:layout_constraintTop_toTopOf="@id/cons" />
+
+                    <TextView
+                        android:id="@+id/userName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10mdp"
+                        android:layout_marginTop="@dimen/_5mdp"
+                        android:text="User Name"
+                        android:textColor="#A82FA4"
+                        android:textSize="@dimen/_9font_mdp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/userProfile" />
+
+                    <EditText
+                        android:id="@+id/editTxt1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_7mdp"
+                        android:layout_marginEnd="@dimen/_10mdp"
+                        android:background="@drawable/edit_box_bg"
+                        android:hint="Enter User Name"
+                        android:paddingStart="@dimen/_50mdp"
+                        android:paddingTop="@dimen/_7mdp"
+                        android:paddingBottom="@dimen/_7mdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@id/userName"
+                        app:layout_constraintTop_toBottomOf="@id/userName" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5mdp"
+                        android:background="@drawable/oval_purple"
+                        android:padding="@dimen/_5mdp"
+                        android:src="@drawable/man"
+                        app:layout_constraintBottom_toBottomOf="@id/editTxt1"
+                        app:layout_constraintStart_toStartOf="@id/editTxt1"
+                        app:layout_constraintTop_toTopOf="@id/editTxt1"
+                        app:tint="@color/white" />
+
+                    <TextView
+                        android:id="@+id/emailId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5mdp"
+                        android:text="Email Id"
+                        android:textColor="#A82FA4"
+                        android:textSize="@dimen/_9font_mdp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@id/editTxt1"
+                        app:layout_constraintTop_toBottomOf="@id/editTxt1" />
+
+                    <EditText
+                        android:id="@+id/editTxt2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_7mdp"
+                        android:background="@drawable/edit_box_bg"
+                        android:hint="Enter Email Id"
+                        android:inputType="textEmailAddress"
+                        android:paddingStart="@dimen/_50mdp"
+                        android:paddingTop="@dimen/_7mdp"
+                        android:paddingBottom="@dimen/_7mdp"
+                        app:layout_constraintEnd_toEndOf="@id/editTxt1"
+                        app:layout_constraintStart_toStartOf="@id/emailId"
+                        app:layout_constraintTop_toBottomOf="@id/emailId" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5mdp"
+                        android:background="@drawable/oval_purple"
+                        android:padding="@dimen/_5mdp"
+                        android:src="@drawable/ic_email"
+                        app:layout_constraintBottom_toBottomOf="@id/editTxt2"
+                        app:layout_constraintStart_toStartOf="@id/editTxt2"
+                        app:layout_constraintTop_toTopOf="@id/editTxt2" />
+
+                    <TextView
+                        android:id="@+id/mobileNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5mdp"
+                        android:text="Mobile Number"
+                        android:textColor="#A82FA4"
+                        android:textSize="@dimen/_9font_mdp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@id/editTxt2"
+                        app:layout_constraintTop_toBottomOf="@id/editTxt2" />
+
+                    <EditText
+                        android:id="@+id/editTxt3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_7mdp"
+                        android:background="@drawable/edit_box_bg"
+                        android:hint="Enter Your Mobile Number"
+                        android:paddingStart="@dimen/_50mdp"
+                        android:inputType="phone"
+                        android:paddingTop="@dimen/_7mdp"
+                        android:paddingBottom="@dimen/_7mdp"
+                        app:layout_constraintEnd_toEndOf="@id/editTxt2"
+                        app:layout_constraintStart_toStartOf="@id/mobileNumber"
+                        app:layout_constraintTop_toBottomOf="@id/mobileNumber" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5mdp"
+                        android:background="@drawable/oval_purple"
+                        android:padding="@dimen/_5mdp"
+                        android:src="@drawable/ic_phone"
+                        app:layout_constraintBottom_toBottomOf="@id/editTxt3"
+                        app:layout_constraintStart_toStartOf="@id/editTxt3"
+                        app:layout_constraintTop_toTopOf="@id/editTxt3" />
+
+                    <TextView
+                        android:id="@+id/password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5mdp"
+                        android:text="Password"
+                        android:textColor="#A82FA4"
+                        android:textSize="@dimen/_9font_mdp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@id/editTxt3"
+                        app:layout_constraintTop_toBottomOf="@id/editTxt3" />
+
+                    <EditText
+                        android:id="@+id/editTxt4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_7mdp"
+                        android:background="@drawable/edit_box_bg"
+                        android:hint="Enter Password"
+                        android:inputType="textPassword"
+                        android:paddingStart="@dimen/_50mdp"
+                        android:paddingTop="@dimen/_7mdp"
+                        android:paddingBottom="@dimen/_7mdp"
+                        app:layout_constraintEnd_toEndOf="@id/editTxt3"
+                        app:layout_constraintStart_toStartOf="@id/password"
+                        app:layout_constraintTop_toBottomOf="@id/password" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5mdp"
+                        android:background="@drawable/oval_purple"
+                        android:padding="@dimen/_5mdp"
+                        android:src="@drawable/ic_password"
+                        app:layout_constraintBottom_toBottomOf="@id/editTxt4"
+                        app:layout_constraintStart_toStartOf="@id/editTxt4"
+                        app:layout_constraintTop_toTopOf="@id/editTxt4" />
+
+                    <TextView
+                        android:id="@+id/sex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5mdp"
+                        android:text="Sex"
+                        android:textColor="#A82FA4"
+                        android:textSize="@dimen/_9font_mdp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@id/editTxt4"
+                        app:layout_constraintTop_toBottomOf="@id/editTxt4" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintStart_toStartOf="@id/sex"
+                        app:layout_constraintTop_toBottomOf="@id/sex">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Male"
+                            android:textColor="#A82FA4"
+                            android:theme="@style/myTheme" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10mdp"
+                            android:text="Female"
+                            android:textColor="#A82FA4"
+                            android:theme="@style/myTheme" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10mdp"
+                            android:text="Others"
+                            android:textColor="#A82FA4"
+                            android:theme="@style/myTheme" />
+
+
+                    </RadioGroup>
+
+                    <Button
+                        android:id="@+id/saveBtn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_7mdp"
+                        android:backgroundTint="#BE22AB"
+                        android:text="Save"
+                        android:textStyle="bold"
+                        app:cornerRadius="@dimen/_15mdp"
+                        app:layout_constraintEnd_toEndOf="@id/editTxt4"
+                        app:layout_constraintStart_toStartOf="@id/radioGroup"
+                        app:layout_constraintTop_toBottomOf="@id/radioGroup" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

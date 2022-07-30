@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">AllAssignmentsDemo</string>
+    <string name="by_signing_up_you_agree_to_our_terms_data_policy_and_cookies_policy">By signing up you agree to our <b>Terms</b>, <b>Data Policy</b> and <b>Cookies Policy</b></string>
+    <string name="theowonteeffect_blame_society"><b>theowonteeffect</b> Blame Society</string>
+    <string name="userappsin">\@appsinppuser</string>
+    <string name="developerappsin">developer@appsinpp.com</string>
+    <string name="back_to_home">Back to \nhome</string>
+
+    <string-array name="spinner_value">
+        <item>-Select a category-</item>
+        <item>Computer Science &amp; engineering </item>
+        <item>Electrical &amp; Electronics Engineering</item>
+        <item>Bachelor of Business Administration</item>
+        <item>Bachelor of Pharmacy</item>
+        <item>Islamic Studies</item>
+        <item>Bachelor of Laws</item>
+
+    </string-array>
+</resources>
